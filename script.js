@@ -160,6 +160,7 @@ function update() {
 
         if (correct == width) {
             gameOver = true;
+            win();
         }
     }
 
@@ -188,4 +189,12 @@ function update() {
 
     row += 1;
     col = 0;
+}
+
+function win() {
+    alert("you win!")
+    document.getElementById("answer").innerHTML = "Congrats! Restarting in 10 seconds...";
+    setTimeout(() => {
+        location.reload();
+    }, 10000);
 }
