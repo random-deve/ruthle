@@ -1,3 +1,5 @@
+console.log("version: 0.9")
+
 let height = 6; //number of guesses
 let width = 5; //length of the word
 
